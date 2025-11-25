@@ -15,3 +15,19 @@ a.active {
     background: black;
     color: white;
 }
+
+.nav-bar {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  background: #111;
+}
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-link.active {
+  color: white;
+  text-decoration: underline;
+}
