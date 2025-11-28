@@ -1,18 +1,18 @@
 // src/pages/Home.js
-import NavBar from "../components/NavBar";
 import MovieCard from "../components/MovieCard";
-import movies from "../data/movies"; // make sure you have a movies array
+import movies from "../data/movies";   // ← this import now works
 
 function Home() {
   return (
     <>
-      <NavBar />
       <h1>Home Page</h1>
-      <div>
-        {movies.map(movie => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
-      </div>
+      {movies.map((movie) => (
+        <MovieCard
+          key={movie.id}
+          id={movie.id}          // ← pass the id
+          title={movie.title}    // ← pass the title
+        />
+      ))}
     </>
   );
 }

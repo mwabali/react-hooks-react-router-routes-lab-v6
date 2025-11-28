@@ -1,12 +1,12 @@
-import React from "react";
 import NavBar from "../components/NavBar";
 
-
-export default function ErrorPage() {
-    return (
-        <div>
-            <NavBar />
-            <h1>Error: Page Not Found</h1>
-        </div>
-    )
+function ErrorPage() {
+  return (
+    <>
+      <NavBar />
+      <h1>Oops! Looks like something went wrong.</h1>
+    </>
+  );
 }
+
+export default ErrorPage;
